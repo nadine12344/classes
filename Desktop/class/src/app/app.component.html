@@ -1,0 +1,76 @@
+<body class={{aa}}>
+  <!-- header area -->
+  <nav>
+    <div id="head2">
+      <div class="container">
+        <div class="row ">
+          <!-- title and logo -->
+          <div class="title col-md-1 ">
+            <img alt="logo" id="margin-right6" src="assets/images/logo2.png">
+            WenjiClasses</div>
+          <!--buttons on the top  -->
+          <div class="col-md-10 center ">
+            <button class="topButton" mat-button>How it work</button>
+            <button class="topButton" mat-button>Explore</button>
+            <button class="topButton" mat-button>My Contests</button>
+            <button class="topButton" mat-button>My Pins</button>
+            <button class="topButton create" mat-flat-button><img alt="plus"class="plus" src="assets/images/plus_03.png"> CREATE</button>
+          </div>
+        </div>
+      </div>
+      <div id="medium">Creative Math Classes Groups
+      </div>
+      <div id="small">This decription of creative math classes groups.This decription of creative math classes
+        groups</div>
+        <!-- buttons in the bottom of the navigation -->
+      <div class="row" id="buttons">
+        <button class="buttons2" mat-button><span class="material-icons">
+            color_lens
+          </span>Default Theme</button>
+        <mat-divider [vertical]="true"></mat-divider>
+        <button class="buttons2" mat-button><span class="material-icons">
+            play_arrow
+          </span>32 classes</button>
+        <mat-divider [vertical]="true"></mat-divider>
+        <button class="buttons2" mat-button><i class="fa fa-question" aria-hidden="true"></i>12 Teachers</button>
+        <mat-divider [vertical]="true"></mat-divider>
+        <button class="buttons2" mat-button><img alt="book"src="assets/images/book.png">4 students</button>
+      </div>
+    </div>
+  </nav>
+<!-- content of the page below the navigation -->
+<div class="container col-12">
+  <!-- search and add or edit menu -->
+  <div class="form">
+    <!-- search -->
+    <mat-form-field>
+      <input type='text' [(ngModel)]='listFilter' matInput placeholder="Search My Classes">
+     <i matSuffix class="fa fa-search" aria-hidden="true"></i>
+    </mat-form-field>
+    <!-- add  or edit menu -->
+    <span [matMenuTriggerFor]="menu" class="material-icons " id="right">
+      more_horiz
+    </span>
+    <mat-menu #menu="matMenu">
+      <!-- open add dialog -->
+      <button class="menu" (click)="type='Add';openDialog()" mat-menu-item>Add Class</button>
+         <!-- open edit dialog -->
+      <button class="menu" (click)="type='Edit';openDialog()" [disabled]="elements.length===0" mat-menu-item>Edit Class</button>
+    </mat-menu>
+  </div>
+  <!-- dynamic classes array -->
+  <div class="row center">
+    <div id="class" *ngFor="let el of filtered">
+      <span id="id">{{el.id}}</span>
+      <span id="name">{{el.name}}</span>
+      <div class="text " id="margin-top23">School: {{el.school}}</div>
+      <div class="text">Grade: {{el.Grade}}</div>
+    </div>
+  </div> <button id="add" mat-fab color="accent" aria-label="Example icon button with a bookmark icon">+
+  </button>
+</div>
+<div class="margin-bottom"><button class="btn-info" (click)="change()">Change Theme</button></div>
+<footer class="footer"><img src="assets/images/icon.png" alt="logo"></footer>
+</body>
+
+<!-- footer at the bottom -->

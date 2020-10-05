@@ -1,0 +1,342 @@
+.body{
+    background-image: url(/assets/images/background.png);
+    background-color: $light-body;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    
+      
+  
+.title{
+    margin-left: -25px;
+    font-family: "Josefin Sans";
+font-size: 26.94px;
+font-weight: 400;
+display: flex;
+margin-right: 13%;
+margin-bottom: 15px;
+}
+
+#margin-right6{
+    margin-right: 6px;  
+}
+.fa-book{
+    color:$icons; 
+    font-size: 18px;
+    margin-right: 2px; 
+  }
+nav{
+    color:$main;
+    background-image: url(/assets/images/math.png);
+    background-size: cover;
+    background-color: $header-background;
+
+}
+//background image for header
+#head2{
+    padding: 10px;     
+    background-image: url(/assets/images/background-header.png);  
+    padding-bottom: 10px;
+}
+
+//styling for buttons
+#buttons{
+    margin-left: 11%;
+    .material-icons{
+        color:$icons;   
+    }
+}
+.center2{
+    display:flex;
+    justify-content: center;
+}
+//small screens
+@media only screen and (min-width: 777px) {
+    .center{
+        display:flex;
+        width:190px;
+justify-content: center;    }
+    .center2{
+        display:flex;
+        justify-content: center;
+    }
+    .buttons{
+        margin-left: 12%;
+    }
+  }
+
+//add buutton
+   #add{
+   background-color:$buttons;
+   float: right;
+   margin-top: -50px;
+   margin-bottom: 50px;
+    }
+ 
+       
+
+#small{
+font-family: "Montserrat";
+    font-size:13px;
+    background-color: rgba(184, 182, 182, 0.3);
+    border-radius: 95px;
+    margin-left: -35px;
+    width:60%;
+    padding:2px;
+    padding-left: 18%;
+
+    
+    margin-bottom: 10px;
+}
+
+
+#medium{
+    font-size:29.56px;
+    font-family: "Montserrat";
+    background-color: rgba(184, 182, 182, 0.4);
+    border-radius: 95px;
+    margin-left: -49px;
+    width:55%;
+    padding:2px;
+    padding-left: 18%; 
+    margin-bottom: 10px;
+}
+button{
+    color: $main;
+    border-radius: 18px;
+    margin-left: 0px;
+    padding-bottom: 35px; 
+    
+
+  
+}
+.topButton{
+    
+    font-family: "Montserrat";
+    font-size: 11.33px;   
+    height: 29px;
+}
+
+button:hover{
+  background-color: rgb(216, 213, 213,0.4);
+  
+  animation: wobble; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; 
+  
+}
+.menu{
+    color: $body;;
+}
+.form{
+    margin-left:12%;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+ margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    background-color: $header-background;
+    color: $main;
+
+    display: flex;
+    justify-content: center;
+  
+  }
+  //question icon
+  .fa-question{
+    color:$icons; 
+    font-size: 18px;
+    margin-right: 2px; 
+  }
+  .mat-divider{
+      background-color: $main;
+      height:18px;
+margin-top: 7px;  }
+ .fa-plus {
+ 
+    line-height: 20px;
+ 
+  
+align-items: center;
+   
+    font-size:170%;
+}
+//dynamic classes
+#class{
+    height: 109px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-bottom: 15px;
+    #id{color:$main;
+    padding-left: 25px;
+    padding-top: 23px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+ position: absolute;
+        height: 109px;
+        width:75px;
+         background-color: $body;
+         font-family:"Montserrat" ;
+         font-size: 19.68px;}
+ width:75%;
+ #name{
+     font-family: "Montserrat";
+     font-size: 17.72px;
+     margin-left: 95px;
+     position: relative;
+     top:23px;
+
+ }
+ #margin-top23{
+    margin-top: 23px;
+ }
+ .text{
+     font-family: "Montserrat";
+     font-size: 12.79px;
+     color: $medium-body;
+     margin-left: 95px;
+    
+
+ }
+}
+.plus{
+    margin-right:5px;
+}
+.create{
+
+   background-color:$buttons;
+   margin-bottom: 5px;
+}
+.change{
+    background-color:$buttons;
+    height:40px;
+    margin:50px;
+    margin-top: 0;
+ }
+#class:hover{
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; 
+   width: 77%;
+ #id{
+    background-color: $id;
+ }
+}
+#right{
+   
+    margin-left: 70%;
+    color: $body;
+    margin-top: 2%;
+}
+#right:hover{
+  cursor: pointer;
+}
+
+#add{
+    border-radius: 50px;
+font-family: "[FontAwesome5FreeSolid]";
+font-size:39px ;
+
+    margin-right: 3%;
+}
+//search icon
+.fa-search{
+    color: $header-background;
+    transform: rotate(90deg)
+}
+.fa-plus{
+   color: $main;
+
+}
+@media only screen and (max-width: 990px) {
+    .col-sm-1-5{
+width:20%;
+    }
+.title{
+    margin-right: 10%;
+}
+  
+}
+@media only screen and (max-width: 760px) {
+    .col-sm-1-5{
+width:20%;
+    }
+.title{
+    margin-right: 35%;
+}
+  
+}
+
+ 
+  //for small screens
+   @media only screen and (max-width: 660px) {
+    .center2{
+        margin-left: 2px;
+        margin-right: 4px;
+    }
+   
+    #class{
+        width:95%;
+        overflow: auto;
+    }
+    #add{
+        margin-top:1px;
+        
+    }
+   #right{
+       margin-left: 10%;
+   }
+    #class:hover{
+    
+        width: 96%;}
+    #small{
+        margin-left: -30px;
+        padding-left: 35px;
+        padding-right: 50px;
+        width:115%;
+        border-radius: 0;
+    }
+   
+    #medium{
+        margin-left: -33px;
+        padding-left: 35px;
+        border-radius: 0;
+        width:125%;
+        padding-right: 10px;
+      
+    }
+    
+   
+  }
+  .buttons2{
+      font-family:  "Montserrat";
+      font-size: 12.3px;
+      height: 29px;
+  }
+  @media only screen and (min-width: 760px )and(max-width: 995px) {
+    .title{
+    justify-content: center;
+    margin-left: 90px;
+    }
+    #right{
+     margin-left: 55%;
+ }
+     }
+  
+    }
+   
+    .center{
+        margin-bottom: 10px;
+    }
+    @media only screen and (max-width: 580px) {
+        mat-divider{
+            display: none;
+        }
+        .buttons2{
+            display: block;
+            width:95%;
+ left:-25px;
+        }
+     
+        
+    }  
