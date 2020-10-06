@@ -26,7 +26,7 @@
      <div class="col-3 title">Grade</div>
    </div>
  <!-- dynamic fields -->
-   <form [formGroup]="dynamicForm" (ngSubmit)="done()">
+   <form class="noBorder"[formGroup]="dynamicForm" (ngSubmit)="done()">
     <div *ngFor="let class of classes.controls; let i = index">
       <div [formGroup]="class"  class="row">
       <div class="col-sm-3">                  
