@@ -1,0 +1,57 @@
+<!-- header area -->
+<nav >{{dialog}} Classes
+  <em (click)="onNoClick()" class="fa close fa-times" aria-hidden="true">
+  </em >
+</nav >
+  <div id="hide-overflow" mat-dialog-content>
+    <!-- dropdown and title -->
+ <div id="center" >
+ <div id="content">
+   <h3>School</h3>
+   <select (change)="selected=$event.target.value"placeholder="Select School Name" class= "custom-select mb-4">
+    <option value="" selected disabled hidden>Select School Name</option>
+
+    <option *ngFor="let school of schools" [value]="school">
+      {{school}}
+    </option>
+  </select>
+   
+  </div>
+ </div>
+ <!-- dynamic fields labels -->
+ <form class=" form" *ngIf="selected">
+   <div class="row hide-small" id="margin-left5">
+     <div class="col-3 title">Selection (optional)</div>
+     <div class="col-4 title">Class Name</div>
+     <div class="col-3 title">Grade</div>
+   </div>
+ <!-- dynamic fields -->
+   <form [formGroup]="dynamicForm" (ngSubmit)="done()">
+    <div *ngFor="let class of classes.controls; let i = index">
+      <div [formGroup]="class"  class="row">
+      <div class="col-sm-3">                  
+          <input type="text" placeholder="id" formControlName="id" class="form-control mb-4" [ngClass]="{ 'is-invalid': submitted && class.controls.id.errors }" />        
+      </div>
+  <div class="col-sm-3"> <input type="text" placeholder="Class Name" formControlName="name" class="form-control mb-4" [ngClass]="{ 'is-invalid': submitted && class.controls.name.errors }" />
+    <div *ngIf="submitted && class.controls.name.errors" class="invalid-feedback">
+        <div *ngIf="class.controls.name.errors.required">required</div>
+    </div></div>
+  <div class="col-sm-3"><input placeholder="Grade"type="text" formControlName="Grade" class="mb-4 form-control" [ngClass]="{ 'is-invalid': submitted && class.controls.Grade.errors }" />
+    <div *ngIf="submitted && class.controls.Grade.errors" class="invalid-feedback">
+        <div *ngIf="class.controls.Grade.errors.required">required</div>
+    </div></div>
+  <em  (click)="removeClass(i)"class="fa fa-trash" aria-hidden="true"></em ></div></div>
+</form>
+<div class="add " (click)="addClass()">
+
+ <em class="fa fa-plus-circle"  aria-hidden="true"></em ><span>Add Class</span>
+ </div><mat-divider></mat-divider>
+  <!-- actions -->
+  <div class="row actions " mat-dialog-actions >
+      <button (click)="done()"  id="purple" mat-button>Done</button>
+      <button  (click)="onNoClick()"  mat-button>Cancel</button>
+    </div>
+  </form> 
+ </div> 
+   
+ 

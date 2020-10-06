@@ -1,0 +1,11 @@
+  :host-context(.theme-light) .demo1 {
+    height:100%;
+    @import "./../blue.scss";
+
+  }
+  :host-context(.theme-light) .demo2 {
+    height:100%;
+    @import "./../purple.scss";
+   
+  }
+

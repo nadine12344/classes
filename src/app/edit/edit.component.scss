@@ -1,0 +1,178 @@
+$purple:#8b5aaf;
+$grey:#dddddd;
+$dark-grey:#797979;
+$pink:#ff3636;
+$white:white;
+//header navigation
+nav{
+   
+    
+    background-color: $purple;
+    margin:-25px -25px 4px -25px;
+    height:55px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Montserrat";
+    color:$white;
+    padding-left: 30px;
+}
+.title{
+    font-family: "Montserrat";
+    font-size: 12px;
+}
+.cont{
+  
+    margin-left: 50px;
+}
+input{
+    width:90%;
+    margin-left: 5px;
+    font-family: "Montserrat";
+    font-size: 12px;   
+}
+
+.fa-plus-circle{
+    font-size: 16px;
+    margin-right: 6px;
+}
+.form{
+border:1px solid $grey;
+padding: 2px;
+padding-top: 55px;
+margin-bottom: 20px;
+}
+mat-divider{
+    margin:15px;
+}
+.close{
+    float: right;
+    opacity: 1;
+    color:$white;
+margin:5px;
+}
+h3{
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+#center{
+    margin-top: 40px;
+    
+    display: flex;
+    justify-content: center;
+#content{
+    width:50%;
+
+}}
+//small screens
+@media only screen and (max-width: 660px) {
+    #center{
+        display: flex;
+        justify-content: center;
+        background-color:$white;
+
+    #content{
+        background-color:$white;
+
+        width:100%;
+    
+    }} 
+   .hide-small{
+display: none;
+    }
+}
+mat-option{
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: $dark-grey;
+}
+mat-form-field{
+    width:100%;
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: $dark-grey;
+  
+}
+.col-sm-3{
+    margin: 5px;
+}
+
+
+mat-select{
+    font-size: 12px;
+    color: $dark-grey;  
+}
+#purple{
+    color:$purple;
+   
+}
+.actions{
+    width:50%;
+position: relative;
+left:81%;
+margin-bottom: 10px;
+
+} @media only screen and (max-width: 840px) {
+    .actions{
+        left:75%;
+    }
+   
+     }
+     @media only screen and (max-width: 650px) {
+        .cont{
+            margin-left: 0px;
+        }
+    .actions{
+        display: inline;
+position: relative;
+left:45%;
+   }
+       
+}
+        #hide-overflow{
+            overflow-x: hidden;
+        }
+        .add{
+            cursor: pointer;
+            width:100px;
+           color:$purple;
+           margin-left: 15px;
+           font-size: 12px;
+        }
+       #margin-left5{
+           margin-left: 15px;
+       } 
+        
+        mat-option{
+            font-family: "Montserrat";
+            font-size: 12px;
+            color: $dark-grey;
+        }
+        mat-form-field{
+            width:100%;
+            font-family: "Montserrat";
+            font-size: 12px;
+            color: $dark-grey;
+          
+        }
+        //trash icon
+        .fa-trash{
+            color: $pink;
+            margin: 5px;
+            margin-left: 29px;
+
+        }   
+        .fa-trash:hover{
+            cursor: pointer;
+            animation: wobble; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 2s; 
+        }     
+button:hover{
+    animation: wobble; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; 
+
+}
+.add:hover{
+     
+    animation: wobble; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; 
+}
