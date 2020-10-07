@@ -122,6 +122,9 @@ left:45%;
    }
        
 }
+::-webkit-scrollbar {
+ display: none;
+}
         #hide-overflow{
             overflow-x: hidden;
         }

@@ -37,13 +37,15 @@ export class AppComponent {
     const dialogRef = this.dialog.open(EditComponent,{height:'630px',width:'960px', data: {element: this.elements,type: this.type}});
     dialogRef.afterClosed().subscribe(result => {
       if(this.type==="Add"){
+        if(result!=undefined||result!=null){
         this.elements = this.elements.concat(result);
         this.filtered=this.elements;
-      }
+      }}
       else{
+        if(result!=undefined||result!=null){
       this.elements = result;
       this.filtered=this.elements;}
-    });
+    }});
   }
   change(){
     if(this.theme==="demo1")
