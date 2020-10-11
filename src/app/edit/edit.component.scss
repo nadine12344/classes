@@ -4,6 +4,7 @@ $dark-grey:#797979;
 $pink:#ff3636;
 $white:white;
 //header navigation
+
 nav{
    
     
@@ -122,9 +123,7 @@ left:45%;
    }
        
 }
-::-webkit-scrollbar {
- display: none;
-}
+
         #hide-overflow{
             overflow-x: hidden;
         }
@@ -175,4 +174,8 @@ button:hover{
 }
 .noBorder{
     border:0px;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
