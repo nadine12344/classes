@@ -1,9 +1,14 @@
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
 .body{
     background-image: url(/assets/images/background.png);
     background-color: $light-body;
     height: 100%;
     overflow: auto;
     overflow-x: hidden;
+  
     
       
   
