@@ -38,7 +38,7 @@ export class EditComponent implements OnInit{
     return this._selected;
   }
   set selected(value: string) {
-    console.log(this.selected)
+
     this.classes.clear();
 
     this._selected = value;
