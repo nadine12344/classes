@@ -1,0 +1,26 @@
+{
+  "name": "guc-portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-list-endpoints": "^4.0.1",
+    "joi": "^14.3.1",
+    "joi-phone-number": "^4.1.1",
+    "json2csv": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.21",
+    "nodemon": "^2.0.4"
+  }
+}
